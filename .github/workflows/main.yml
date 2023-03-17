@@ -26,8 +26,7 @@ jobs:
           host: ${{ secrets.HOST}}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          script: |
-            rm -rf anonymization-api
+          script: |            
             git clone git@github.com:Shubha-Manikarnike/CICDonEC2.git
             cd CICDonEC2
             sudo docker-compose build
