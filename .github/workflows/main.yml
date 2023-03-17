@@ -31,3 +31,4 @@ jobs:
             cd CICDonEC2
             sudo docker-compose build
             sudo docker-compose up -d
+            uvicorn main:app --host 0.0.0.0
