@@ -30,5 +30,4 @@ jobs:
             git clone git@github.com:Shubha-Manikarnike/CICDonEC2.git
             cd CICDonEC2
             sudo docker-compose build
-            sudo docker-compose up -d
-            python3 main.py
+            sudo docker-compose up -d            
