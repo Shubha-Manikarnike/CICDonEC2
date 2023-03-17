@@ -31,4 +31,4 @@ jobs:
             cd CICDonEC2
             sudo docker-compose build
             sudo docker-compose up -d
-            python3 uvicorn main:app --host 0.0.0.0
+            python3 main.py
