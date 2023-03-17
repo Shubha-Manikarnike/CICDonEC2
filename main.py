@@ -11,6 +11,7 @@ from fastapi import  Request
 from fastapi.responses import JSONResponse
 import numpy as np
 import pandas as pd
+import uvicorn
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 
 
@@ -212,3 +213,6 @@ async def value_error_exception_handler(request: Request, exc: ValueError):
     )
 # A GET that in this case just returns the item_id we pass,
 # but a future iteration may link the item_id here to the one we defined in our TaggedItem.
+
+if __name__ == '__main__':
+    uvicorn.run(app, port=8000, host='0.0.0.0')
