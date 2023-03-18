@@ -1,6 +1,6 @@
-FROM python:3.7
+FROM python:3.8
 
-RUN pip install numpy pandas scikit-learn pytest requests fastapi uvicorn joblib
+RUN pip install numpy pandas scikit-learn pytest requests fastapi uvicorn joblib pyyaml
 
 COPY ./ /api
 
